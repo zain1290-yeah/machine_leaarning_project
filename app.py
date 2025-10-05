@@ -8,7 +8,7 @@ from PIL import Image
 # Load model and labels
 @st.cache_resource
 def load_model():
-    model = keras.models.load_model("best_finetuned.h5")
+    model = keras.models.load_model("best_finetuned_rgb.keras")
     class_names = json.load(open("labels.json"))
     return model, class_names
 
